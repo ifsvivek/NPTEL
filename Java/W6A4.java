@@ -26,6 +26,8 @@ public class W6A4 {
         for (int i = 0; i < num; i++) {
             arr[i] = sc.nextDouble();
         }
+        
+        // from here
         for (int i = 0; i < num; i++) {
             sum = sum + arr[i];
         }
@@ -35,6 +37,8 @@ public class W6A4 {
             sq = sq + (res * res);
         }
         res = Math.sqrt(sq / num);
+        // to here
+        
         System.out.print("Standard Deviation: " + res);
         sc.close();
     }
