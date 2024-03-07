@@ -17,6 +17,7 @@ public class W6A5 {
     public static void main(String[] args) {
         Scanner inr = new Scanner(System.in);
         int n = inr.nextInt();
+        // from here
         int i, j;
         for (i = n; i > 0; i--) {
             for (j = 0; j < i; j++) {
@@ -30,5 +31,6 @@ public class W6A5 {
             }
             System.out.println();
         }
+        // to here
     }
 }
