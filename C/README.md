@@ -1,0 +1,16 @@
+# Problem Solving Through Programming In C (2023)
+- **Instructor:**  Prof. Anupam Basu
+- **Course:**  [Problem Solving Through Programming In C](https://onlinecourses.nptel.ac.in/noc23_cs121/preview)
+- Course layout
+    - Week 1 : Introduction to Problem Solving through programs, Flowcharts/Pseudo codes, the compilation process, Syntax and Semantic errors, Variables and Data Types 
+    - Week 2 : Arithmetic expressions, Relational Operations, Logical expressions; Introduction to Conditional Branching
+    - Week 3 : Conditional Branching and Iterative Loops
+    - Week 4 : Arranging things : Arrays
+    - Week 5 : 2-D arrays, Character Arrays and Strings 
+    - Week 6 : Basic Algorithms including Numerical Algorithms
+    - Week 7 : Functions and Parameter Passing by Value
+    - Week 8 : Passing Arrays to Functions, Call by Reference
+    - Week 9 : Recursion
+    - Week 10 : Structures and Pointers
+    - Week 11 : Self-Referential Structures and Introduction to Lists
+    - Week 12 : Advanced Topics
