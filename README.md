@@ -21,9 +21,7 @@ This course is instructed by Prof. Anupam Basu. It covers topics from basic prog
 
 This course is instructed by Dr. Debasis Samanta. It covers topics from basic Java programming elements to advanced topics like multithreaded programming and Java Swing.
 
-## Usage
 
-To run the C programs, use a C compiler like gcc. For Java programs, use a Java compiler like javac.
 
 ## Contributing
 
