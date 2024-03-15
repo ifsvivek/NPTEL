@@ -1,25 +1,21 @@
 /*
-Write a C Program to find the Largest Number (integer)  among Three Numbers (integers) using IF and Logical && operator.
-[Week 3 programming assignments will not be considered for final evaluation]
-
-Sample Test Cases
-Input	Output
-Test Case 1	
--9 -4 -20
--4 is the largest number.
-Test Case 2	
-45 34 67
-67 is the largest number.
-Test Case 3	
-80 -5 3
-80 is the largest number.
-
-The due date for submitting this assignment has passed.
-As per our records you have not submitted this assignment.
-Sample solutions (Provided by instructor)
-
-*/
-
+ * Write a C Program to find the Largest Number (integer) among Three Numbers (integers) 
+ * using IF and Logical && operator.
+ *
+ * Sample Test Cases:
+ * Input	Output
+ * Test Case 1:
+ * -9 -4 -20
+ * -4 is the largest number.
+ * Test Case 2:
+ * 45 34 67
+ * 67 is the largest number.
+ * Test Case 3:
+ * 80 -5 3
+ * 80 is the largest number.
+ *
+ * Sample solutions (Provided by instructor):
+ */
 #include <stdio.h>
 
 int main() {

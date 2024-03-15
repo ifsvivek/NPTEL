@@ -1,26 +1,23 @@
 /*
-Write a C program to check whether a given number (integer) is Even or Odd.
-[This program does not carry any marks.]
-
-Sample Test Cases
-Input	Output
-Test Case 1	
-116
-116 is even.
-Test Case 2	
--25
--25 is odd.
-Test Case 3	
-24
-24 is even.
-Test Case 4	
-51
-51 is odd.
-
-The due date for submitting this assignment has passed.
-As per our records you have not submitted this assignment.
-Sample solutions (Provided by instructor)
-*/
+ * Write a C program to check whether a given number (integer) is Even or Odd.
+ *
+ * Sample Test Cases:
+ * Input	Output
+ * Test Case 1:
+ * 116
+ * 116 is even.
+ * Test Case 2:
+ * -25
+ * -25 is odd.
+ * Test Case 3:
+ * 24
+ * 24 is even.
+ * Test Case 4:
+ * 51
+ * 51 is odd.
+ *
+ * Sample solutions (Provided by instructor):
+ */
 
 #include <stdio.h>
 
