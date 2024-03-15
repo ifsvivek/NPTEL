@@ -1,16 +1,8 @@
 /*
 Write a C program to count total number of digits of an Integer number (N).
-Private Test cases used for evaluation	Input	Expected Output	Actual Output	Status
-Test Case 1
-45667
- The number 45667 contains 5 digits.
-The number 45667 contains 5 digits.
-Passed
-Test Case 2
-87
- The number 87 contains 2 digits.
-The number 87 contains 2 digits.
-Passed
+* Private Test cases used for evaluation	Input	Expected Output	                    Actual Output	                    Status
+Test Case                                   145667 The number 145667 contains 6 digits. The number 145667 contains 6 digits. Passed
+Test Case 2                                 87      The number 87 contains 2 digits.    The number 87 contains 2 digits.  Passed
 
 Sample solutions (Provided by instructor)
 */

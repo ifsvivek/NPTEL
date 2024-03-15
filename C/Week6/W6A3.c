@@ -1,54 +1,57 @@
 /*
-Write a C program to read Two One Dimensional Arrays of same data type (integer type) and merge them into another One Dimensional Array of same type.
-Private Test cases used for evaluation	Input	Expected Output	Actual Output	Status
-Test Case 1
-3
-15
-45
-25
-3
-60
-70
-80
- 15\n
-45\n
-25\n
-60\n
-70\n
-80
-15\n
-45\n
-25\n
-60\n
-70\n
-80\n
-Passed
-Test Case 2
-4
-90
-80
-10
-30
-2
-25
-75
- 90\n
-80\n
-10\n
-30\n
-25\n
-75
-90\n
-80\n
-10\n
-30\n
-25\n
-75\n
-Passed
-
-Sample solutions (Provided by instructor)
-*/
-
+ * Write a C program to read Two One Dimensional Arrays of same data type (integer type) 
+ * and merge them into another One Dimensional Array of same type.
+ *
+ * Private Test cases used for evaluation:
+ * Input	Expected Output	Actual Output	Status
+ * Test Case 1:
+ * 3
+ * 15
+ * 45
+ * 25
+ * 3
+ * 60
+ * 70
+ * 80
+ * 15\n
+ * 45\n
+ * 25\n
+ * 60\n
+ * 70\n
+ * 80
+ * 15\n
+ * 45\n
+ * 25\n
+ * 60\n
+ * 70\n
+ * 80\n
+ * Status: Passed
+ *
+ * Test Case 2:
+ * 4
+ * 90
+ * 80
+ * 10
+ * 30
+ * 2
+ * 25
+ * 75
+ * 90\n
+ * 80\n
+ * 10\n
+ * 30\n
+ * 25\n
+ * 75
+ * 90\n
+ * 80\n
+ * 10\n
+ * 30\n
+ * 25\n
+ * 75\n
+ * Status: Passed
+ *
+ * Sample solutions (Provided by instructor):
+ */
 #include<stdio.h>
 int main() {
     int arr1[20], arr2[20], array_new[40], n1, n2, size, i;

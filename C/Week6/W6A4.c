@@ -1,43 +1,45 @@
 /*
-Write a C Program to delete duplicate elements from an array of integers.
-Private Test cases used for evaluation	Input	Expected Output	Actual Output	Status
-Test Case 1
-6
-50
-6
-7
-7
-2
-7
- 50\n
-6\n
-7\n
-2
-50\n
-6\n
-7\n
-2\n
-Passed
-Test Case 2
-7
-2
-4
-2
-6
-4
-2
-4
- 2\n
-4\n
-6
-2\n
-4\n
-6\n
-Passed
-
-
-Sample solutions (Provided by instructor)
-*/
+ * Write a C Program to delete duplicate elements from an array of integers.
+ *
+ * Private Test cases used for evaluation:
+ * Input	Expected Output	Actual Output	Status
+ * Test Case 1:
+ * 6
+ * 50
+ * 6
+ * 7
+ * 7
+ * 2
+ * 7
+ * 50\n
+ * 6\n
+ * 7\n
+ * 2
+ * 50\n
+ * 6\n
+ * 7\n
+ * 2\n
+ * Status: Passed
+ *
+ * Test Case 2:
+ * 7
+ * 2
+ * 4
+ * 2
+ * 6
+ * 4
+ * 2
+ * 4
+ * 2\n
+ * 4\n
+ * 6
+ * 2\n
+ * 4\n
+ * 6\n
+ * Status: Passed
+ *
+ * Sample solutions (Provided by instructor):
+ */
 #include<stdio.h>
 
 int main() {

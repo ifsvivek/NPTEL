@@ -1,24 +1,26 @@
 /*
-The length of three sides are taken as input. Write a C program to find whether a triangle can be formed or not. If not display “This Triangle is NOT possible.” If the triangle can be formed then check whether the triangle formed is equilateral, isosceles, scalene or a right-angled triangle. (If it is a right-angled triangle then only print Right-angle triangle do not print it as Scalene Triangle).
-Sample Test Cases
-Input	Output
-Test Case 1
-10 4 6
-Triangle is not possible
-Test Case 2
-7 6 8
-Scalene Triangle
-Test Case 3
-9 9 9
-Equilateral Triangle
-Test Case 4
-5 12 13
-Right-angle Triangle
-
-The due date for submitting this assignment has passed.
-As per our records you have not submitted this assignment.
-Sample solutions (Provided by instructor)
-*/
+ * The length of three sides are taken as input. Write a C program to find whether a triangle can be formed or not. 
+ * If not display “This Triangle is NOT possible.” If the triangle can be formed then check whether the triangle formed 
+ * is equilateral, isosceles, scalene or a right-angled triangle. 
+ * (If it is a right-angled triangle then only print Right-angle triangle do not print it as Scalene Triangle).
+ *
+ * Sample Test Cases:
+ * Input	Output
+ * Test Case 1:
+ * 10 4 6
+ * Triangle is not possible
+ * Test Case 2:
+ * 7 6 8
+ * Scalene Triangle
+ * Test Case 3:
+ * 9 9 9
+ * Equilateral Triangle
+ * Test Case 4:
+ * 5 12 13
+ * Right-angle Triangle
+ *
+ * Sample solutions (Provided by instructor):
+ */
 
 #include<stdio.h>
 int main() {

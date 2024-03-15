@@ -1,24 +1,24 @@
 /*
-Write a C Program to Find the Smallest Number among Three Numbers (integer values) using Nested IF-Else statement.
-Sample Test Cases
-Input	Output
-Test Case 1
-90 -9 -80
--80 is the smallest number.
-Test Case 2
-100 200 0
-0 is the smallest number.
-Test Case 3
-80 40 90
-40 is the smallest number.
-Test Case 4
-77 88 -99
--99 is the smallest number.
-
-The due date for submitting this assignment has passed.
-As per our records you have not submitted this assignment.
-Sample solutions (Provided by instructor)
-*/
+ * Write a C Program to Find the Smallest Number among Three Numbers (integer values)
+ * using Nested IF-Else statement.
+ *
+ * Sample Test Cases:
+ * Input	Output
+ * Test Case 1:
+ * 90 -9 -80
+ * -80 is the smallest number.
+ * Test Case 2:
+ * 100 200 0
+ * 0 is the smallest number.
+ * Test Case 3:
+ * 80 40 90
+ * 40 is the smallest number.
+ * Test Case 4:
+ * 77 88 -99
+ * -99 is the smallest number.
+ *
+ * Sample solutions (Provided by instructor):
+ */
 
 #include <stdio.h>
 int main() {
