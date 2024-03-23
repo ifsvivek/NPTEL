@@ -8,19 +8,13 @@ class W08_P2 {
     public static void main(String... a) {
         Scanner s = new Scanner(System.in);
         int num = s.nextInt();
-
-        // from here
         double result = 0.0;
-        int i = 1;
-
-        while (i <= num) {
-            result = result + (double) 1 / i;
-            i++;
+        while (num > 0) {
+            result = result + (double) 1 / num;
+            num--;
+            // System.out.print(result +" ");
         }
-
-        System.out.println("Output of Harmonic Series is " + String.format("%.2f", result));
-
-        s.close();
-        // till here
+        // System.out.println("");
+        System.out.println("Output of Harmonic Series is " + result);
     }
 }
