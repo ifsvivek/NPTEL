@@ -16,7 +16,6 @@ class W09_P2 {
         // from here
         InputStreamReader r = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(r);
-
         try {
             String number = br.readLine();
             int x = Integer.parseInt(number);
