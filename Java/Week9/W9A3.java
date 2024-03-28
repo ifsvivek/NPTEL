@@ -31,10 +31,11 @@ public class W9A3 {
             int n = inr.nextInt();
             inr.close();
 
-            // print the required output
+            // from here
             System.out.print("byte_array[" + n + "] = '" + (char) byte_array[n] + "'");
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.print("Array index is out of range");
         }
+        // till here
     }
 }
