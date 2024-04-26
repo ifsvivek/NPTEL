@@ -1,0 +1,418 @@
+(base) MacBook-Air-5:~ pravinrao$ jshell
+|  Welcome to JShell -- Version 17.0.10
+|  For an introduction type: /help intro
+
+jshell> /help intro
+|  
+|                                   intro
+|                                   =====
+|  
+|  The jshell tool allows you to execute Java code, getting immediate results.
+|  You can enter a Java definition (variable, method, class, etc), like:  int x = 8
+|  or a Java expression, like:  x + x
+|  or a Java statement or import.
+|  These little chunks of Java code are called 'snippets'.
+|  
+|  There are also the jshell tool commands that allow you to understand and
+|  control what you are doing, like:  /list
+|  
+|  For a list of commands: /help
+
+jshell> System.out.print("Hello World");
+Hello World
+jshell> System.out.print('Hello World'); //Here we are using single quotes
+|  Error:
+|  unclosed character literal
+|  System.out.print('Hello World'); //Here we are using single quotes
+|                   ^
+
+jshell> // "" - String ''-character
+
+jshell> System.out.print('a');
+a
+jshell> System.out.print('ab');
+|  Error:
+|  unclosed character literal
+|  System.out.print('ab');
+|                   ^
+
+jshell> System.out.print("ab");
+ab
+jshell> System.out.print('a''b');
+|  Error:
+|  ')' expected
+|  System.out.print('a''b');
+|                      ^
+
+jshell> System.out.print("Hello" + " World");
+Hello World
+jshell> System.out.print("Hello" + " World"); // + is acting as String concatenation
+Hello World
+jshell> System.out.print("ab);
+|  Error:
+|  unclosed string literal
+|  System.out.print("ab);
+|                   ^
+
+jshell> System.out.print("ab")
+ab
+jshell> 
+
+jshell> 
+
+jshell> 
+
+jshell> 
+
+jshell> 
+
+jshell> 
+
+jshell> 
+
+jshell> 
+
+jshell> 
+
+jshell> 
+
+jshell> int myFirstNumber = 5; 
+myFirstNumber ==> 5
+
+jshell> {
+   ...>     int myFirstNumber = 5;
+jshell> {   // int -> keyword
+   ...>     int myFirstNumber = 5;riable
+   ...>     // int -> keyword= 5 -> an expression
+   ...>     // myFirstNumber -> variable statement
+   ...>     // myFirstNumber = 5 -> an expression
+   ...>     // int myFirstNumber = 5; -> statement
+   ...>     // myFirstNumber -> lowerCamelCasens; total possible completions: 545>
+   ...>   // anything written {} -> code blocks
+   ...> }
+
+jshell> {
+   ...>     int myFirstNumber = 5;
+   ...>     // int -> keyword
+   ...>     // myFirstNumber -> variable
+   ...>     // myFirstNumber = 5 -> an expression
+   ...>     // int myFirstNumber = 5; -> statement
+   ...>     // myFirstNumber -> lowerCamelCase
+   ...>   // anything written {} -> code blocks
+   ...> }
+
+jshell> myFirstNumber
+myFirstNumber ==> 5
+
+jshell> int myFirstNumber = 100;
+myFirstNumber ==> 100
+
+jshell> int myFirstNumber = 60;
+myFirstNumber ==> 60
+
+jshell> myFirstNumber = 80;
+myFirstNumber ==> 80
+
+jshell> float myFirstNumber = 100.9;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float myFirstNumber = 100.9;
+|                        ^---^
+
+jshell> float myFirstNumber = 100.9f;
+myFirstNumber ==> 100.9
+
+jshell> int myFirstNumber = 10l
+|  Error:
+|  incompatible types: possible lossy conversion from long to int
+|  int myFirstNumber = 10l;
+|                      ^-^
+
+jshell> int myFirstNumber = 10;
+myFirstNumber ==> 10
+
+jshell> myFirstNumber = 10  + 5;
+myFirstNumber ==> 15
+
+jshell> myFirstNumber = 10 / 5;
+myFirstNumber ==> 2
+
+jshell> myFirstNumber = (10 + 5) + (2 * 10);
+myFirstNumber ==> 35
+
+jshell> myFirstNumber = 10 + 5 + 2 * 10;
+myFirstNumber ==> 35
+
+jshell> int mySecondNumber = 12;
+mySecondNumber ==> 12
+
+jshell> int myThirdNumber = 6;
+myThirdNumber ==> 6
+
+jshell> int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
+myTotal ==> 53
+
+jshell> myThirdNumber = myFirstNumber * 2;
+myThirdNumber ==> 70
+
+jshell> int myLastOne;
+myLastOne ==> 0
+
+jshell> myLastOne = 1000 - myTotal;
+myLastOne ==> 947
+
+jshell> System.out.print(myLastOne);
+947
+jshell> {
+   ...>     myLastOne = 1000 - myTotal;
+   ...>     System.out.println(myLastOne);
+   ...> }
+947
+
+jshell> System.out.print(MyLastOne);
+|  Error:
+|  cannot find symbol
+|    symbol:   variable MyLastOne
+|  System.out.print(MyLastOne);
+|                   ^-------^
+
+jshell> int MyLastOne;
+MyLastOne ==> 0
+
+jshell> Int myLastOne;
+|  replaced variable myLastOne, however, it cannot be referenced until class Int is declared
+
+jshell> int myLastOne
+myLastOne ==> 0
+
+jshell> INT mySecondLastOne;
+|  created variable mySecondLastOne, however, it cannot be referenced until class INT is declared
+
+jshell> int myMinIntValue = Integer.MIN_VALUE;
+myMinIntValue ==> -2147483648
+
+jshell> int myMaxIntValue = Integer.MAX_VALUE;
+myMaxIntValue ==> 2147483647
+
+jshell> System.out.println("Integer MIN value " + myMinIntValue + " and Integer MAX value " + myMaxIntValue);
+Integer MIN value -2147483648 and Integer MAX value 2147483647
+
+jshell> System.out.println("Integer MIN value " + Integer.MIN_VALUE + " and Integer MAX value " + Integer.MAX_VALUE);
+Integer MIN value -2147483648 and Integer MAX value 2147483647
+
+jshell> System.out.println("Byte MIN value " + Byte.MIN_VALUE + " and Byte MAX value " + Byte.MAX_VALUE);
+Byte MIN value -128 and Byte MAX value 127
+
+jshell> System.out.println("Float MIN value " + Float.MIN_VALUE + " and Float MAX value " + Float.MAX_VALUE);
+Float MIN value 1.4E-45 and Float MAX value 3.4028235E38
+
+jshell> System.out.println("Double MIN value " + Double.MIN_VALUE + " and Double MAX value " + Double.MAX_VALUE);
+Double MIN value 4.9E-324 and Double MAX value 1.7976931348623157E308
+
+jshell> int var1 = myMaxIntValue + 1;
+var1 ==> -2147483648
+
+jshell> int var1 = myMaxIntValue + 2;
+var1 ==> -2147483647
+
+jshell> int var1 = 2147483648;
+|  Error:
+|  integer number too large
+|  int var1 = 2147483648;
+|             ^
+
+jshell> int var2 = myMinIntValue - 1;
+var2 ==> 2147483647
+
+jshell> int var2 = myMinIntValue - 2;
+var2 ==> 2147483646
+
+jshell> int var2 = -2147483648;
+var2 ==> -2147483648
+
+jshell> int var2 = -2147483649;
+|  Error:
+|  integer number too large
+|  int var2 = -2147483649;
+|              ^
+
+jshell> int maxIntTest = 2_147_483_647;
+maxIntTest ==> 2147483647
+
+jshell> int maxIntTest = 2_147_483_648;
+|  Error:
+|  integer number too large
+|  int maxIntTest = 2_147_483_648;
+|                   ^
+
+jshell> long myLongValue = 100l
+myLongValue ==> 100
+
+jshell> long myLongValue = 100;
+myLongValue ==> 100
+
+jshell> long myLongValue = 100; // it is an int
+myLongValue ==> 100
+
+jshell> long myLongValue = 2_147_483_648; // it is an int
+|  Error:
+|  integer number too large
+|  long myLongValue = 2_147_483_648; // it is an int
+|                     ^
+
+jshell> System.out.print(Long.MIN_VALUE + " to " + Long.MAX_VALUE);
+-9223372036854775808 to 9223372036854775807
+jshell> long myLongValue = 2_147_483_648l; // it is an long
+myLongValue ==> 2147483648
+
+jshell> long myLongValue = 245_147_483_648l; // it is an long
+myLongValue ==> 245147483648
+
+jshell> float myFloatValue = 10.89; // it is a double
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float myFloatValue = 10.89; // it is a double
+|                       ^---^
+
+jshell> float myFloatValue = 10.89f; // it is a double
+myFloatValue ==> 10.89
+
+jshell> short firstShort = 1, secondShort = 2;
+firstShort ==> 1
+secondShort ==> 2
+
+jshell> byte myTotal =  (firstShort / secondShort);
+|  Error:
+|  incompatible types: possible lossy conversion from int to byte
+|  byte myTotal =  (firstShort / secondShort);
+|                   ^----------------------^
+
+jshell> byte myTotal = (byte) (firstShort / secondShort);
+myTotal ==> 0
+
+jshell> int myvar1 = 100;
+myvar1 ==> 100
+
+jshell> float myvar2 = 200f;
+myvar2 ==> 200.0
+
+jshell> int myvar3;
+myvar3 ==> 0
+
+jshell> myvar3 = (myvar2/ myvar1);
+|  Error:
+|  incompatible types: possible lossy conversion from float to int
+|  myvar3 = (myvar2/ myvar1);
+|            ^------------^
+
+jshell> myvar3 = (int)(myvar2/ myvar1);
+myvar3 ==> 2
+
+jshell> float myvar4;
+myvar4 ==> 0.0
+
+jshell> myvar4 = (myvar2 / myvar1);
+myvar4 ==> 2.0
+
+jshell> double myvar5 = (myvar2 / myvar1);
+myvar5 ==> 2.0
+
+jshell> double myvar5 = (float)(myvar2 / myvar1);
+myvar5 ==> 2.0
+
+jshell> float myFloatValue;
+myFloatValue ==> 0.0
+
+jshell> myFloatValue = 5f / 3.0;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  myFloatValue = 5f / 3.0;
+|                 ^------^
+
+jshell> myFloatValue = (float) (5f / 3.0);
+myFloatValue ==> 1.6666666
+
+jshell> char myChar = 'D';
+myChar ==> 'D'
+
+jshell> char myChar = 'DD';
+|  Error:
+|  unclosed character literal
+|  char myChar = 'DD';
+|                ^
+
+jshell> char myunicode = '\u0044';
+myunicode ==> 'D'
+
+jshell> my myChar2 = '?';
+|  Error:
+|  cannot find symbol
+|    symbol:   class my
+|  my myChar2 = '?';
+|  ^^
+
+jshell> char myChar2 = '?';
+myChar2 ==> '?'
+
+jshell> char myChar3 = '\u003F';
+myChar3 ==> '?'
+
+jshell> char myDecimalChar = 63;
+myDecimalChar ==> '?'
+
+jshell> char mychar5 = "?";
+|  Error:
+|  incompatible types: java.lang.String cannot be converted to char
+|  char mychar5 = "?";
+|                 ^-^
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result = result + 1;
+   ...>     System.out.println(result);
+   ...> }
+2
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result++;
+   ...>     System.out.println(result);
+   ...> }
+2
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result += 1;
+   ...>     System.out.println(result);
+   ...> }
+2
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result += 1;  //abreviated operator
+   ...>     System.out.println(result);
+   ...> }
+2
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result *= 5.5;  //abreviated operator
+   ...>     System.out.println(result);
+   ...> }
+55.0
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result *= 5.5;  //abreviated operator -> result = result * 5.5
+   ...>     System.out.println(result);
+   ...> }
+55.0
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result /= 5.5;  //abreviated operator
+   ...>     System.out.println(result);
+   ...> }
+1.8181818181818181
+
+jshell> 

@@ -1,0 +1,225 @@
+(base) MacBook-Air-5:~ pravinrao$ java -version
+java version "14.0.2" 2020-07-14
+Java(TM) SE Runtime Environment (build 14.0.2+12-46)
+Java HotSpot(TM) 64-Bit Server VM (build 14.0.2+12-46, mixed mode, sharing)
+(base) MacBook-Air-5:~ pravinrao$ jshell
+|  Welcome to JShell -- Version 14.0.2
+|  For an introduction type: /help intro
+
+jshell> /help intro
+|  
+|                                   intro
+|                                   =====
+|  
+|  The jshell tool allows you to execute Java code, getting immediate results.
+|  You can enter a Java definition (variable, method, class, etc), like:  int x = 8
+|  or a Java expression, like:  x + x
+|  or a Java statement or import.
+|  These little chunks of Java code are called 'snippets'.
+|  
+|  There are also the jshell tool commands that allow you to understand and
+|  control what you are doing, like:  /list
+|  
+|  For a list of commands: /help
+
+jshell> System.out.print("Hello World");
+Hello World
+jshell> /list -all
+
+  s1 : import java.io.*;
+  s2 : import java.math.*;
+  s3 : import java.net.*;
+  s4 : import java.nio.file.*;
+  s5 : import java.util.*;
+  s6 : import java.util.concurrent.*;
+  s7 : import java.util.function.*;
+  s8 : import java.util.prefs.*;
+  s9 : import java.util.regex.*;
+ s10 : import java.util.stream.*;
+   1 : System.out.print("Hello World");
+
+jshell> int myIntValue = 18;
+myIntValue ==> 18
+
+jshell> int myFirstNumber = 100; System.out.print(myFirstNumber);
+myFirstNumber ==> 100
+100
+jshell> {}
+
+jshell> {
+   ...> myFristNumber = 2000;
+   ...> System.out.print(myFirstNumber);
+   ...> }
+|  Error:
+|  cannot find symbol
+|    symbol:   variable myFristNumber
+|  myFristNumber = 2000;
+|  ^-----------^
+
+jshell> {
+   ...> myFirstNumber = 2000;
+   ...> System.out.print(myFirstNumber);
+   ...> }
+2000
+jshell> myFirstNumber = (10 + 5) + (2 * 10);
+myFirstNumber ==> 35
+
+jshell> int myMinIntValue = Integer.MIN_VALUE;
+myMinIntValue ==> -2147483648
+
+jshell> int myMaxIntValue = Integer.MAX_VALUE;
+myMaxIntValue ==> 2147483647
+
+jshell> int myIntSize = Integer.SIZE;
+myIntSize ==> 32
+
+jshell> myMaxIntValue = myMaxIntValue + 1;
+myMaxIntValue ==> -2147483648
+
+jshell> int var = 2147483647 + 1
+var ==> -2147483648
+
+jshell> myMinIntValue = myMinIntValue - 1;
+myMinIntValue ==> 2147483647
+
+jshell> myMaxIntValue = myMaxIntValue + 2;
+myMaxIntValue ==> -2147483646
+
+jshell> long myvar = 100;
+myvar ==> 100
+
+jshell> long myvar = 100L;
+myvar ==> 100
+
+jshell> myvar = (100/2);
+myvar ==> 50
+
+jshell> long myvar = (100/2);
+myvar ==> 50
+
+jshell> System.out.print("Float Value Range {" + Float.MIN_VALUE + " to " + Float.MAX_VALUE + ")");
+Float Value Range {1.4E-45 to 3.4028235E38)
+jshell> System.out.print("Double Value Range {" + Double.MIN_VALUE + " to " + Double.MAX_VALUE + ")");
+Double Value Range {4.9E-324 to 1.7976931348623157E308)
+jshell> float myFloatValue = 5.25;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float myFloatValue = 5.25;
+|                       ^--^
+
+jshell> double myDoubleValue = 5.25;
+myDoubleValue ==> 5.25
+
+jshell> float myFloatValue = 5.25f;
+myFloatValue ==> 5.25
+
+jshell> double myDoubleValue = 5.25d;
+myDoubleValue ==> 5.25
+
+jshell> double myDoubleValue = 5/3;
+myDoubleValue ==> 1.0
+
+jshell> double myDoubleValue = 5.0/3;
+myDoubleValue ==> 1.6666666666666667
+
+jshell> double myDoubleValue = 5/3.0;
+myDoubleValue ==> 1.6666666666666667
+
+jshell> double myDoubleValue = 5/3;
+myDoubleValue ==> 1.0
+
+jshell> double myDoubleValue = 5d/3;
+myDoubleValue ==> 1.6666666666666667
+
+jshell> double myDoubleValue = myvar/myFloatValue;
+myDoubleValue ==> 9.523809432983398
+
+jshell> double myDoubleValue = (double) 5/3;
+myDoubleValue ==> 1.6666666666666667
+
+jshell> double myZero = (double) 1/0;
+myZero ==> Infinity
+
+jshell> double myZero = (double) 1.0/0;
+myZero ==> Infinity
+
+jshell> double myZero = 1.0/0.0;
+myZero ==> Infinity
+
+jshell> double myZero = 0/1;
+myZero ==> 0.0
+
+jshell> double myZero = 0/1.0;
+myZero ==> 0.0
+
+jshell> double myZero = 1/0;
+|  Exception java.lang.ArithmeticException: / by zero
+|        at (#36:1)
+
+jshell> double myZero = (double) 1/0;
+myZero ==> Infinity
+
+jshell> int myZero = 0/1;
+myZero ==> 0
+
+jshell> int myZero = (int) 1/0;
+|  Exception java.lang.ArithmeticException: / by zero
+|        at (#39:1)
+
+jshell> int myZero = (double) 1/0;
+|  Error:
+|  incompatible types: possible lossy conversion from double to int
+|  int myZero = (double) 1/0;
+|               ^----------^
+
+jshell> double myZero = (double) 1/0;
+myZero ==> Infinity
+
+jshell> char myChar = 'D';
+myChar ==> 'D'
+
+jshell> char myChar = "D";
+|  Error:
+|  incompatible types: java.lang.String cannot be converted to char
+|  char myChar = "D";
+|                ^-^
+
+jshell> System.out.print('Hello World');
+|  Error:
+|  unclosed character literal
+|  System.out.print('Hello World');
+|                   ^
+
+jshell> System.out.print("Hello World");
+Hello World
+jshell> char myChar = 68;
+myChar ==> 'D'
+
+jshell> char myChar = '\u0044';
+myChar ==> 'D'
+
+jshell> char myChar = 300;
+myChar ==> 'Ĭ'
+
+jshell> char myChar = 10000;
+myChar ==> '✐'
+
+jshell> char myChar = 40000;
+myChar ==> '鱀'
+
+jshell> char myChar = 92;
+myChar ==> '\\'
+
+jshell> /exit
+|  Goodbye
+(base) MacBook-Air-5:~ pravinrao$ java -version
+java version "14.0.2" 2020-07-14
+Java(TM) SE Runtime Environment (build 14.0.2+12-46)
+Java HotSpot(TM) 64-Bit Server VM (build 14.0.2+12-46, mixed mode, sharing)
+(base) MacBook-Air-5:~ pravinrao$ jshell
+|  Welcome to JShell -- Version 14.0.2
+|  For an introduction type: /help intro
+
+jshell> /exit
+|  Goodbye
+(base) MacBook-Air-5:~ pravinrao$ jshell
